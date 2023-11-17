@@ -8,3 +8,72 @@ font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-areas: "header" "main" "footer";
 }
+
+header, main, footer{
+    padding: 1rem;
+}
+
+header{
+    font-size: 1.5rem;
+    grid-area: header;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.yellow-btn{
+    display: inline-block;
+    padding: 1rem;
+    background-color: #e6bd43;
+    text-decoration: none;
+    color: #000;
+}
+
+#compeling-headline{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+    background-color: lightgray;
+}
+
+#compeling-headline h1{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/*husk enten en id eller class til de index dokumentene på siden sånn at 
+understreken på lenkene ikke synes*/
+
+main{
+    grid-area: main;
+}
+
+/*husk enten en id eller class eller en main section img på css for
+bilde for å få den responsiv*/
+
+footer{
+    grid-area: footer;
+}
+
+#our-services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#our-services h2{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width:600px) {
+    #grid-container {
+        
+    }
+}
