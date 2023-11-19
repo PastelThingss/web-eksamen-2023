@@ -80,6 +80,15 @@ footer{
     text-align: center;
 }
 
+#newsletter-color{
+    background-color: lightgrey;
+}
+
+#company-social{
+    background-color: #000;
+    color: white;
+}
+
 @media only screen and (min-width:600px) {
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
