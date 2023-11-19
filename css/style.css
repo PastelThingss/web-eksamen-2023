@@ -45,6 +45,14 @@ header nav{
     text-align: center;
 }
 
+#about-border{
+    border: 1px solid black;
+}
+
+#about-border-btn{
+    border: 2px solid black;
+}
+
 /*husk enten en id eller class til de index dokumentene på siden sånn at 
 understreken på lenkene ikke synes*/
 
@@ -74,6 +82,28 @@ footer{
 
 @media only screen and (min-width:600px) {
     #grid-container {
-        
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    header{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    main{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
 }
+
