@@ -16,11 +16,13 @@ header, main, footer{
 header{
     font-size: 1.5rem;
     grid-area: header;
+    text-align: center;
 }
 
 header nav{
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .yellow-btn{
@@ -82,11 +84,13 @@ footer{
 
 #newsletter-color{
     background-color: lightgrey;
+    text-align: center;
 }
 
 #company-social{
     background-color: #000;
     color: white;
+    text-align: center;
 }
 
 @media only screen and (min-width:600px) {
