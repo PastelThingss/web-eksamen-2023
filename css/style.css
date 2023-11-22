@@ -28,7 +28,6 @@ header nav{
 }
 
 .yellow-btn{
-    
     padding: 1rem;
     background-color: #e6bd43;
     text-decoration: none;
@@ -60,8 +59,9 @@ header nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 0.5rem;
     justify-content: space-around;
+    width: fit-content; 
 }
 
 #compeling-headline h1{
@@ -83,7 +83,17 @@ header nav{
 }
 
 #about-border{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
     border: 1px solid black;
+    
+}
+
+#about-border img{
+    width: 100%;
 }
 
 #about-border-btn{
@@ -120,12 +130,14 @@ footer{
 #newsletter-color{
     background-color: lightgrey;
     text-align: center;
+    padding: 0.5rem;
 }
 
 #company-social{
     background-color: #000;
     color: white;
     text-align: center;
+    padding: 0.5rem;
 }
 
 @media only screen and (min-width:600px) {
