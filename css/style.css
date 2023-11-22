@@ -43,17 +43,21 @@ header nav{
     flex-wrap: wrap;
     padding: 1rem;
     justify-content: space-around;
-    background-color: lightgray;
-    ;
-}
-
-background-image{
-    background-image: url(pen-laptop-bok.jpg)
+    background-image: url(../img/pen-laptop-bok.jpg);
+    background-size: cover;
 }
 
 #compeling-headline h1{
     flex-basis: 100%;
     text-align: center;
+}
+
+#text-compelling-headline{
+
+}
+
+#text-compelling-headline img{
+    
 }
 
 #about-border{
