@@ -44,6 +44,11 @@ header nav{
     padding: 1rem;
     justify-content: space-around;
     background-color: lightgray;
+    ;
+}
+
+background-image{
+    background-image: url(pen-laptop-bok.jpg)
 }
 
 #compeling-headline h1{
