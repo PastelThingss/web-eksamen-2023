@@ -38,26 +38,48 @@ header nav{
 }
 
 #compeling-headline{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1rem;
     justify-content: space-around;
-    background-image: url(../img/pen-laptop-bok.jpg);
-    background-size: cover;
+}
+
+#compeling-headline p{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#compeling-headline a{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
 }
 
 #compeling-headline h1{
     flex-basis: 100%;
     text-align: center;
+    position: relative;
 }
 
-#text-compelling-headline{
-
-}
-
-#text-compelling-headline img{
-    
+#compeling-headline::before{
+    content: "";
+    background-image: url(../img/pen-laptop-bok.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 }
 
 #about-border{
