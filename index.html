@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <title>nettbutikk</title>
+        <title>forside</title>
     </head>
     <body>
         <div id="grid-container">
@@ -22,7 +22,7 @@
                 <a href="index.html"><img src="img/logo1.png" alt="et bilde av forside logo"></a>
             </section>
             <nav>
-                <a class="underline-text" href="index.html">Home</a>
+                <a id="underline-text-home" href="index.html">Home</a>
                 <a href="portofolio.html">Portofolio</a>
                 <a href="about.html">About</a>
                 <a href="about.html#contact-us-skip"><p class="yellow-btn">Contact</p></a>
@@ -65,38 +65,43 @@
                 <article>
                     <i class="fa-solid fa-users"></i>
                     <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor</p>
                 </article>
                 <article>
                     <i class="fa-solid fa-cloud-arrow-up"></i>
                     <h3>Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>> elit, sed do eiusmod tempor</p>
                 </article>
                 <article>
                     <i class="fa-solid fa-code"></i>
                     <h3>Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor</p>
                 </article>
                 <article>
                     <i class="fa-solid fa-wifi"></i>
                     <h3>Support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor</p>
                 </article>
             </section>
         </main>
         <footer>
             <section id="newsletter-color">
                 <h2>Sign up for our newsletter</h2>
-                <input placeholder="search">
-                <a href="#"><p >Sign me up!</p></a>
+                <form>
+                    <input type="email" placeholder="Nora@epost.no">
+                    <a href="#"><p >Sign me up!</p></a>
+                </form>
             </section> 
             <section id="company-social">
                 <a href="index.html"><img src="img/logo1.png" alt="logobilde"></a>
-                <p><strong> Comapanycopyright Companyname 2023</strong></p>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-solid fa-arrow-up"></i>
+                <p>Comapanycopyright Companyname 2023</p>
+                <article id=" ikoner-social-desk">
+                    <!--HUSK Å LINKE SOSIALE MEDIER IKONER TIL SINE SOSIALE NETTSIDER MED EN A HREF LINK-->
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-solid fa-arrow-up"></i>
+                </article>
             </section>
         </footer>
     </div>
