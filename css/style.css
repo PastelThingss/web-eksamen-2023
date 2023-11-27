@@ -2,25 +2,31 @@
     box-sizing: border-box;
 }
 
+/*Body delen i css mobile*/
+
 body{
 font-family: 'Dosis', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 }
+/*kan hende disse body forside, portofolio og about kommentar struktur ikke er nødvendig men det får vi se ann*/
+/*Forside css i mobile body*/
+
+
+/*Portofolio css i mobile body*/
+
+
+/*About css i mobile body*/
+
 
 #grid-container{
     display: grid;
     grid-template-areas: "header" "main" "footer";
     box-sizing: border-box;
 }
+/*Body delen i css mobile slutten*/
 
-.padding-content{
-    padding: 1rem;
-}
-
-.padding-content h2{
-    text-align: center;
-}
+/*header delen i css mobile*/
 
 header{
     font-size: 1.5rem;
@@ -36,40 +42,9 @@ header nav a{
     margin: 1rem;
     text-decoration: none;
 }
+/*header delen i css mobile slutten*/
 
-.underline-text{
-    border-bottom: solid;
-    border-color: #e6bd43;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0.2rem;
-    padding: 0.5rem;
-}
-
-#underline-text-home{
-    text-decoration: underline;
-    text-decoration: solid;
-    text-decoration-color: #e6bd43;
-    text-decoration-thickness: 0.2rem;
-}
-
-.underline-text a{
-    text-decoration: underline;
-    text-decoration-color: #e6bd43;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0.2rem;
-    padding: 0.5rem;
-}
-
-.yellow-btn{
-    padding: 1rem;
-    background-color: #e6bd43;
-    text-decoration: none;
-    color: #000;
-    width: fit-content;
-    margin: auto;
-    font-weight: bold;
-}
-
+/*Forside css i mobile header*/
 #compeling-headline{
     position: relative;
     display: flex;
@@ -122,7 +97,9 @@ header nav a{
     bottom: 0px;
     left: 0px;
 }
+/*Forside css i mobile header slutten*/
 
+/*Portofolio css i mobile header*/
 #compeling-headline-pf{
     position: relative;
     display: flex;
@@ -153,7 +130,9 @@ header nav a{
     bottom: 0px;
     left: 0px;
 }
+/*Portofolio css i mobile header slutten*/
 
+/*About css i mobile header*/
 #compeling-headline-about{
     position: relative;
     display: flex;
@@ -201,9 +180,62 @@ header nav a{
     left: 0px;
     padding: 2rem;
 }
+/*About css i mobile header slutten*/
 
 #background-color-company {
     background: rgba(249, 245, 252, 0.5)
+}
+
+.underline-text{
+    border-bottom: solid;
+    border-color: #e6bd43;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.2rem;
+    padding: 0.5rem;
+}
+
+#underline-text-home{
+    text-decoration: underline;
+    text-decoration: solid;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 0.2rem;
+}
+
+.underline-text a{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.2rem;
+    padding: 0.5rem;
+}
+
+.yellow-btn{
+    padding: 1rem;
+    background-color: #e6bd43;
+    text-decoration: none;
+    color: #000;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+}
+
+
+
+
+
+/*main delen i css mobile*/
+
+main{
+    grid-area: main;
+}
+
+/*Forside css i mobile main*/
+.padding-content{
+    padding: 1rem;
+}
+
+.padding-content h2{
+    text-align: center;
 }
 
 #about-border{
@@ -232,9 +264,53 @@ header nav a{
     display: inline-block;
 }
 
-main{
-    grid-area: main;
+#our-services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
 }
+
+#our-services h2{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#our-services article{
+    text-align: center;
+}
+
+#our-services i{
+    font-size: 2rem;
+}
+
+#our-services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#our-services h2{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#our-services article{
+    text-align: center;
+}
+
+#our-services i{
+    font-size: 2rem;
+}
+
+/*Portofolio css i mobile main*/
+
+
+/*About css i mobil emain*/
+
 
 #background-clients{
     background-color: #e6bd43;
@@ -298,31 +374,13 @@ main{
     float: left;
 }
 
+/*footer delen i css mobile*/
+
 footer{
     grid-area: footer;
 }
 
-#our-services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem;
-    justify-content: space-around;
-}
-
-#our-services h2{
-    flex-basis: 100%;
-    text-align: center;
-}
-
-#our-services article{
-    text-align: center;
-}
-
-#our-services i{
-    font-size: 2rem;
-}
-
+/*Forside css i mobile footer*/
 #newsletter-color{
     background-color: lightgrey;
     text-align: center;
@@ -363,8 +421,22 @@ footer{
     font-size: 2rem;
     padding-inline: 0.5rem;
 }
+/*Forside css i mobile footer slutten*/
 
-@media only screen and (min-width:600px) and (max-width: 1600px) {
+/*Portofolio css i mobile footer*/
+
+/*Portofolio css i mobile footer slutten*/
+
+
+/*About css i mobile footer*/
+
+/*About css i mobile footer slutten*/
+
+
+
+
+
+/*@media only screen and (min-width:600px) and (max-width: 1600px) {
     #grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -398,7 +470,7 @@ footer{
 
 /*Header delen i desktop*/
 
-    header{
+   /* header{
         font-size: 1.5rem;
         grid-area: header;
         padding: 1rem;
@@ -413,12 +485,12 @@ footer{
         display: flex;
         flex-direction: row;
         align-items: center;
-    }
+    }*/
 
     /*main delen i desktop*/
 
     /*footer delen i desktop*/
-    #our-services{
+   /* #our-services{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -429,8 +501,8 @@ footer{
     #our-services h2{
         /*flex-basis: 100%;
         text-align: center;*/
-    }
-
+    }*/
+/*
     #our-services-h2{
         text-align: center;
         margin: auto;
@@ -500,7 +572,7 @@ footer{
     /*Forside css desktop*/
 
     /*Portofolio css desktop*/
-    #compeling-headline-pf{
+   /* #compeling-headline-pf{
         position: relative;
         display: flex;
         flex-direction: row;
@@ -550,7 +622,7 @@ footer{
 
     /*About css desktop*/
 
-    #about-border{
+   /* #about-border{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -638,4 +710,4 @@ footer{
     #background-color-company {
         background: rgba(249, 245, 252, 0.5)
     }
-}
+}*/
