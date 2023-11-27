@@ -3,21 +3,20 @@
 }
 
 /*Body delen i css mobile*/
-
 body{
 font-family: 'Dosis', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 }
-/*kan hende disse body forside, portofolio og about kommentar struktur ikke er nødvendig men det får vi se ann*/
-/*Forside css i mobile body*/
 
+/*Forside css i mobile body*/
+/*Forside css i mobile body slutten*/
 
 /*Portofolio css i mobile body*/
-
+/*Portofolio css i mobile body slutten*/
 
 /*About css i mobile body*/
-
+/*About css i mobile body slutten*/
 
 #grid-container{
     display: grid;
@@ -105,18 +104,14 @@ header nav a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1rem;
-    width: 343px;
-    height: 382.9px;
     justify-content: space-around;
 }
 
 #compeling-headline-pf h1{
+    flex-basis: 100%;
     text-align: center;
     position: relative;
-    flex-basis: 100%;
-    vertical-align: middle;
-    line-height: 345px;
+    padding: 10rem 0;
 }
 
 #compeling-headline-pf::before{
@@ -133,6 +128,7 @@ header nav a{
 /*Portofolio css i mobile header slutten*/
 
 /*About css i mobile header*/
+/*
 #compeling-headline-about{
     position: relative;
     display: flex;
@@ -180,48 +176,11 @@ header nav a{
     left: 0px;
     padding: 2rem;
 }
-/*About css i mobile header slutten*/
 
 #background-color-company {
     background: rgba(249, 245, 252, 0.5)
-}
-
-.underline-text{
-    border-bottom: solid;
-    border-color: #e6bd43;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0.2rem;
-    padding: 0.5rem;
-}
-
-#underline-text-home{
-    text-decoration: underline;
-    text-decoration: solid;
-    text-decoration-color: #e6bd43;
-    text-decoration-thickness: 0.2rem;
-}
-
-.underline-text a{
-    text-decoration: underline;
-    text-decoration-color: #e6bd43;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0.2rem;
-    padding: 0.5rem;
-}
-
-.yellow-btn{
-    padding: 1rem;
-    background-color: #e6bd43;
-    text-decoration: none;
-    color: #000;
-    width: fit-content;
-    margin: auto;
-    font-weight: bold;
-}
-
-
-
-
+}*/
+/*About css i mobile header slutten*/
 
 /*main delen i css mobile*/
 
@@ -285,40 +244,13 @@ main{
     font-size: 2rem;
 }
 
-#our-services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem;
-    justify-content: space-around;
-}
-
-#our-services h2{
-    flex-basis: 100%;
-    text-align: center;
-}
-
-#our-services article{
-    text-align: center;
-}
-
-#our-services i{
-    font-size: 2rem;
-}
-
-/*Portofolio css i mobile main*/
-
-
-/*About css i mobil emain*/
-
-
-#background-clients{
-    background-color: #e6bd43;
+#sa-img{
+    justify-content: center;
     text-align: center;
 }
 
 #sa-img img{
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
@@ -330,8 +262,9 @@ main{
     padding: 0.5rem;
 }
 
+/*Portofolio css i mobile main*/
 #portofolio-main{
-    padding:  1.5rem;
+    /*padding:  1.5rem;*/
 }
 
 .BDD-btn{
@@ -342,6 +275,14 @@ main{
     margin: 0.5rem;
     border: 2px solid black;
     float: inline-start;
+}
+/*Portofolio css i mobile main slutten*/
+
+/*About css i mobile main*/
+
+#background-clients{
+    background-color: #e6bd43;
+    text-align: center;
 }
 
 #article-img-about img{
@@ -373,14 +314,60 @@ main{
     font-size: 1.5rem;
     float: left;
 }
+/*About css i mobile main slutt*/
 
 /*footer delen i css mobile*/
 
 footer{
     grid-area: footer;
 }
+/*footer delen i css mobile slutten*/
 
 /*Forside css i mobile footer*/
+/*Forside css i mobile footer slutten*/
+
+/*Portofolio css i mobile footer*/
+/*Portofolio css i mobile footer slutten*/
+
+/*About css i mobile footer*/
+/*About css i mobile footer slutten*/
+
+/*Gjelder all tre sider i mobile*/
+/*(body) er ikke i header eller andre men påvirker hele siden*/
+.underline-text{
+    border-bottom: solid;
+    border-color: #e6bd43;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.2rem;
+    padding: 0.5rem;
+}
+
+.underline-text a{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.2rem;
+    padding: 0.5rem;
+}
+
+.yellow-btn{
+    padding: 1rem;
+    background-color: #e6bd43;
+    text-decoration: none;
+    color: #000;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+}
+/*(body) er ikke i header eller andre men påvirker hele siden slutten*/
+
+/*header*/
+/*header slutt*/
+
+/*main*/
+/*main slutt*/
+
+/*footer*/
 #newsletter-color{
     background-color: lightgrey;
     text-align: center;
@@ -421,22 +408,11 @@ footer{
     font-size: 2rem;
     padding-inline: 0.5rem;
 }
-/*Forside css i mobile footer slutten*/
+/*footer slutt*/
+/*Gjelder all tre sider i mobile slutten*/
 
-/*Portofolio css i mobile footer*/
-
-/*Portofolio css i mobile footer slutten*/
-
-
-/*About css i mobile footer*/
-
-/*About css i mobile footer slutten*/
-
-
-
-
-
-/*@media only screen and (min-width:600px) and (max-width: 1600px) {
+/*Dette er media Q for nettsidens oppset/utseende på desktop*/
+@media only screen and (min-width:600px) and (max-width: 1600px) {
     #grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -470,51 +446,53 @@ footer{
 
 /*Header delen i desktop*/
 
-   /* header{
+    header{
         font-size: 1.5rem;
         grid-area: header;
-        padding: 1rem;
+        /*padding: 1rem;*/
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         
     }
-    
+   
     header nav{
         display: flex;
         flex-direction: row;
         align-items: center;
-    }*/
+    }
 
     /*main delen i desktop*/
-
-    /*footer delen i desktop*/
-   /* #our-services{
+    #our-services{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 1rem;
-        flex-flow: row;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: baseline;
     }
     
     #our-services h2{
-        /*flex-basis: 100%;
-        text-align: center;*/
-    }*/
-/*
-    #our-services-h2{
+        flex-basis: 100%;
         text-align: center;
-        margin: auto;
+        margin: 0 auto;
     }
     
     #our-services article{
         text-align: center;
+        margin: 0 auto;
+        flex-basis: 20%;
     }
     
     #our-services i{
         font-size: 2rem;
     }
+
+    /*main delen i desktop slutten*/
+
+    /*footer delen i desktop*/
 
     #newsletter-color{
         background-color: lightgrey;
@@ -555,8 +533,8 @@ footer{
     }
     
     #company-social img{
-       width: 60px;
-       height: 60px; 
+       width: 70px;
+       height: 70px; 
        display: flex;
        flex-direction: row;
        margin: 1rem;
@@ -568,27 +546,30 @@ footer{
         display: flex;
         flex-direction: row;
     }
+     /*footer delen i desktop slutten*/
 
     /*Forside css desktop*/
+    /*Forside css desktop slutten*/
 
     /*Portofolio css desktop*/
-   /* #compeling-headline-pf{
+    #padding-explore{
+        display: inline-block;
+    }
+
+    #compeling-headline-pf{
         position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 1rem;
-        width: 343px;
-        height: 382.9px;
         justify-content: space-around;
     }
     
     #compeling-headline-pf h1{
+        flex-basis: 100%;
         text-align: center;
         position: relative;
-        flex-basis: 100%;
-        vertical-align: middle;
-        line-height: 345px;
+        padding: 12rem;
+        width: 100vw;
     }
     
     #compeling-headline-pf::before{
@@ -603,11 +584,34 @@ footer{
         left: 0px;
     }
 
-    #sa-img img{
-        width: 50%;
+    #sa-img{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+        flex-flow: row wrap;
+        align-items: baseline;
+    }
+
+    #sa-img-trio{
+        align-items: center;
+    }
+
+    #sa-img h2{
+        flex-basis: 100%;
+        margin: 0 auto;
+        text-align: initial;
+        margin-bottom: 2.5rem;
+    }
+
+    #sa-img img{
+        width: 80%;
         display: grid;
+        height: auto;
+    }
+
+    #sa-img article{
+        padding: 1rem;
     }
 
     #sa-img p{
@@ -617,12 +621,27 @@ footer{
         font-size: large;
         padding: 0.5rem;
         display: flex
-        
     }
+
+    #giga-img img{
+        width: 150%;
+        justify-content: left;
+    }
+
+    .two-big-img{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+        flex-flow: row wrap;
+        align-items: baseline;
+    }
+    /*Portofolio css desktop slutten*/
 
     /*About css desktop*/
 
-   /* #about-border{
+   #about-border{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -659,13 +678,14 @@ footer{
         border: 2px solid black;
     }
 
-    #compeling-headline-about{
-        position: relative;
+     /* #compeling-headline-about{
+      position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 1rem;
         justify-content: space-around;
+        display: inline-block;
     }
     
     #compeling-headline-about p{
@@ -673,7 +693,7 @@ footer{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 40px;
+        margin-left: 40px; 
         margin-right: 40px;
         margin-top: 40px;
     }
@@ -695,19 +715,90 @@ footer{
         position: relative;
     }
     
-    #compeling-headline-about{
+    #compeling-headline-about::before{
         content: "";
         background-image: url(../img/pen-laptop-bok.jpg);
         background-size: cover;
-        position: absolute;
+        position: absolute; 
+        opacity: 0.5;
         top: 0px;
         right: 0px;
         bottom: 0px;
         left: 0px;
-        padding: 2rem;
     }
-    
-    #background-color-company {
-        background: rgba(249, 245, 252, 0.5)
+
+    #about-trans{
+        background: rgba(249, 245, 252, 0.5);
+        width: fit-content;
+        display: inline-block;
+    }*/
+
+    #background-clients{
+        background-color: #e6bd43;
+        text-align: center;
+        padding: 1.5rem;
     }
-}*/
+
+    #article-img-about img{
+        text-align: center;
+        padding: 0 2rem;
+        justify-content: space-between;
+    }
+
+    #contact-us-skip{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    #contact-us-skip label, input, textarea{
+        padding: 0.5rem;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #contact-us-skip textarea{
+        padding: 1.5rem;
+        display: block;
+        margin-bottom: 20px;
+        height: 5rem;
+    }
+
+    #contact-us-skip section{
+        flex-basis: 20%;
+        margin: 0 auto;
+    }
+
+    #contact-us-skip h2{
+        flex-basis: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+   /* #contact-us{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        padding: 1.5rem;
+    }
+
+    #contact-us h3{
+        flex-basis: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #contact-us i{
+        font-size: 1.5rem;
+        float: left;
+    }*/
+/*
+    #google-kart{
+        width: "600";
+        height: "450";
+        border: 0;
+    }*/
+    /*About css desktop slutten*/
+}
