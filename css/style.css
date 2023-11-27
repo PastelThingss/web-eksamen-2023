@@ -396,58 +396,44 @@ footer{
         box-sizing: border-box;
     }
 
-    body{
-        background-color: rgb(248, 194, 227);
-    }
+/*Header delen i desktop*/
 
-    #about-border{
+    header{
+        font-size: 1.5rem;
+        grid-area: header;
+        padding: 1rem;
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        padding: 1rem;
         flex-direction: row;
-        background-color: #e6bd43;
-        flex-flow: row wrap;
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-    }
-
-    #about-border span{
-        flex-basis: 70%;
-        margin: 0 auto;
-        display: block;
-        padding: 1.5rem;
-        padding-top: 4.5rem;
-    }
-
-    #about-border p{
-        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
     }
     
-    #about-border img{
-        width: 70%;
-        display: inline-block;
-        flex-basis: 30%;
-        margin: 0 auto;
-        padding: 1rem;
-    }
-    
-    #about-border-btn{
-        border: 2px solid black;
+    header nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
+    /*main delen i desktop*/
+
+    /*footer delen i desktop*/
     #our-services{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 1rem;
-        flex-flow: row wrap;
+        flex-flow: row;
     }
     
     #our-services h2{
-        flex-basis: 100%;
+        /*flex-basis: 100%;
+        text-align: center;*/
+    }
+
+    #our-services-h2{
         text-align: center;
+        margin: auto;
     }
     
     #our-services article{
@@ -511,6 +497,96 @@ footer{
         flex-direction: row;
     }
 
+    /*Forside css desktop*/
+
+    /*Portofolio css desktop*/
+    #compeling-headline-pf{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+        width: 343px;
+        height: 382.9px;
+        justify-content: space-around;
+    }
+    
+    #compeling-headline-pf h1{
+        text-align: center;
+        position: relative;
+        flex-basis: 100%;
+        vertical-align: middle;
+        line-height: 345px;
+    }
+    
+    #compeling-headline-pf::before{
+        content: "";
+        background-image: url(../img/pen-laptop-bok.jpg);
+        background-size: cover;
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    #sa-img img{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        display: grid;
+    }
+
+    #sa-img p{
+        width: 100%;
+        height: auto;
+        font-weight: 900;
+        font-size: large;
+        padding: 0.5rem;
+        display: flex
+        
+    }
+
+    /*About css desktop*/
+
+    #about-border{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 1rem;
+        flex-direction: row;
+        background-color: #e6bd43;
+        flex-flow: row wrap;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    #about-border span{
+        flex-basis: 70%;
+        margin: 0 auto;
+        display: block;
+        padding: 1.5rem;
+        padding-top: 4.5rem;
+    }
+
+    #about-border p{
+        margin-bottom: 40px;
+    }
+    
+    #about-border img{
+        width: 70%;
+        display: inline-block;
+        flex-basis: 30%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    
+    #about-border-btn{
+        border: 2px solid black;
+    }
+
     #compeling-headline-about{
         position: relative;
         display: flex;
@@ -563,38 +639,6 @@ footer{
         background: rgba(249, 245, 252, 0.5)
     }
 
-    header{
-        font-size: 1.5rem;
-        grid-area: header;
-        padding-top: 0.5rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        display:grid
-    }
     
-    header nav a{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    #sa-img img{
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-        display: grid;
-    }
-
-    #sa-img p{
-        width: 100%;
-        height: auto;
-        font-weight: 900;
-        font-size: large;
-        padding: 0.5rem;
-        display: flex
-        
-    }
     
 }
