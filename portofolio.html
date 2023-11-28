@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="et navn">
         <meta name="description" content="en nettbutikk med nettbutikk greier">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
@@ -22,7 +22,7 @@
                     <a href="index.html"><img src="img/logo1.png" alt="et bilde av forside logo"></a>
                 </section>
                 <nav>
-                    <a class="underline-text" href="index.html">Home</a>
+                    <a class="underline-text-home" href="index.html">Home</a>
                     <a href="portofolio.html">Portofolio</a>
                     <a href="about.html">About</a>
                     <a href="about.html#contact-us-skip"><p class="yellow-btn">Contact</p></a>
@@ -37,13 +37,13 @@
                 <section id="padding-explore">
                     <h2 class="underline-text">Explore previous jobs</h2>
                     <article>
-                        <p class="BDD-btn">Branding</p>
-                        <p class="BDD-btn">Design</p>
-                        <p class="BDD-btn">Development</p>
+                       <a href="#branding-skip"><p class="BDD-btn">Branding</p></a>
+                       <a href="#design-skip"><p class="BDD-btn">Design</p></a>
+                        <a href="#development-skip"><p class="BDD-btn">Development</p></a>
                     </article>
                 </section>
                 <section id="sa-img">
-                    <h2 class="underline-text">Branding</h2>
+                    <h2 id="branding-skip" class="underline-text">Branding</h2>
                     <article class="sa-img-trio">
                         <img src="https://placehold.co/400x400/png" alt="placeholder bilde">
                         <p>Lorem ipsum dolor sit amet</p>
@@ -61,7 +61,7 @@
                         <p>Lorem ipsum dolor sit amet</p>
                     </article>
 
-                    <h2 class="underline-text">Design</h2>
+                    <h2 id="design-skip" class="underline-text">Design</h2>
                     <article>
                         <img src="https://placehold.co/400x400/png" alt="placeholder bilde">
                         <p>Lorem ipsum dolor sit amet</p>
@@ -75,7 +75,7 @@
                         <p>Lorem ipsum dolor sit amet</p>
                     </article>
 
-                    <h2 class="underline-text">Development</h2>
+                    <h2 id="development-skip" class="underline-text">Development</h2>
                     <article class="two-big-img">
                         <img src="https://placehold.co/400x400/png" alt="placeholder bilde">
                         <p>Lorem ipsum dolor sit amet</p>
@@ -89,17 +89,19 @@
             <footer>
                 <section id="newsletter-color">
                     <h2>Sign up for our newsletter</h2>
-                    <input placeholder="search">
-                    <a href="#"><p >Sign me up!</p></a>
+                    <form>
+                        <label for="sign-me-up"></label>
+                            <input id=sign-me-up type="text" value="Nora@epost.no">
+                            <a href="#"><p>Sign me up!</p></a>
+                    </form>
                 </section> 
                 <section id="company-social">
                     <a href="index.html"><img src="img/logo1.png" alt="logobilde"></a>
                     <p> Comapanycopyright Companyname 2023</p>
                     <article id="ikoner-social-desk">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <i class="fa-brands fa-square-instagram"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-solid fa-arrow-up"></i>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://no.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a>
                     </article>
                 </section>
             </footer>

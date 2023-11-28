@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="et navn">
         <meta name="description" content="en nettbutikk med nettbutikk greier">
         <link href="css/font/css/fontawesome.css" rel="stylesheet">
@@ -22,7 +22,7 @@
                 <a href="index.html"><img src="img/logo1.png" alt="et bilde av forside logo"></a>
             </section>
             <nav>
-                <a id="underline-text" href="index.html">Home</a>
+                <a class="underline-text-home" href="index.html">Home</a>
                 <a href="portofolio.html">Portofolio</a>
                 <a href="about.html">About</a>
                 <a href="about.html#contact-us-skip"><p class="yellow-btn">Contact</p></a>
@@ -47,7 +47,7 @@
             </section>
             <section id="about-border">
                 <img src="https://placehold.co/400x400/png" alt="placeholder bilde">
-                <span>
+                <div>
                 <h2>About Our Company</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -58,7 +58,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                 <a href="about.html" id="about-border-btn" class="yellow-btn">Read more about us</a>
-                </span>
+                </div>
             </section>
             <section id="our-services">
                 <h2>Our Services</h2>
@@ -88,19 +88,18 @@
             <section id="newsletter-color">
                 <h2>Sign up for our newsletter</h2>
                 <form>
-                    <input type="email" placeholder="Nora@epost.no">
-                    <a href="#"><p >Sign me up!</p></a>
+                    <label for="sign-me-up"></label>
+                        <input id=sign-me-up type="text" value="Nora@epost.no">
+                        <a href="#"><p>Sign me up!</p></a>
                 </form>
             </section> 
             <section id="company-social">
                 <a href="index.html"><img src="img/logo1.png" alt="logobilde"></a>
                 <p>Comapanycopyright Companyname 2023</p>
                 <article id="ikoner-social-desk">
-                    <!--HUSK Å LINKE SOSIALE MEDIER IKONER TIL SINE SOSIALE NETTSIDER MED EN A HREF LINK-->
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-solid fa-arrow-up"></i>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://no.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a>
                 </article>
             </section>
         </footer>

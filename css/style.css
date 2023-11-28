@@ -128,7 +128,6 @@ header nav a{
 /*Portofolio css i mobile header slutten*/
 
 /*About css i mobile header*/
-/*
 #compeling-headline-about{
     position: relative;
     display: flex;
@@ -143,9 +142,8 @@ header nav a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
+    padding: 1rem;
+    justify-content: space-around;
 }
 
 #compeling-headline-about a{
@@ -159,13 +157,13 @@ header nav a{
     font-size: 1.4rem; 
 }
 
-#compeling-headline-about h2{
+#compeling-headline-about h1{
     flex-basis: 100%;
     text-align: center;
     position: relative;
 }
 
-#compeling-headline-about{
+#compeling-headline-about::before{
     content: "";
     background-image: url(../img/pen-laptop-bok.jpg);
     background-size: cover;
@@ -174,12 +172,8 @@ header nav a{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    padding: 2rem;
 }
 
-#background-color-company {
-    background: rgba(249, 245, 252, 0.5)
-}*/
 /*About css i mobile header slutten*/
 
 /*main delen i css mobile*/
@@ -206,7 +200,7 @@ main{
     background-color: #e6bd43;
 }
 
-#about-border span{
+#about-border div{
     flex-basis: 70%;
     margin: 0 auto;
     display: block;
@@ -274,6 +268,12 @@ main{
     border: 2px solid black;
     float: inline-start;
 }
+
+#branding-skip{
+    display: inline-block;
+    margin-top: 2.5rem;
+    width: 100%;
+}
 /*Portofolio css i mobile main slutten*/
 
 /*About css i mobile main*/
@@ -332,6 +332,17 @@ footer{
 
 /*Gjelder all tre sider i mobile*/
 /*(body) er ikke i header eller andre men påvirker hele siden*/
+.underline-text-home{
+    border-bottom: solid;
+    border-color: #e6bd43;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0.2rem;
+    padding: 0.5rem;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .underline-text{
     border-bottom: solid;
     border-color: #e6bd43;
@@ -340,12 +351,14 @@ footer{
     padding: 0.5rem;
 }
 
+
 .underline-text a{
     text-decoration: underline;
     text-decoration-color: #e6bd43;
     text-decoration-style: solid;
     text-decoration-thickness: 0.2rem;
     padding: 0.5rem;
+    width: fit-content;
 }
 
 .yellow-btn{
@@ -406,6 +419,21 @@ footer{
     font-size: 2rem;
     padding-inline: 0.5rem;
 }
+
+#google-kart{
+    width: 100vw;
+    height: 180px;
+    position: relative;
+}
+
+#ikoner-social-desk a{
+    font-size: 2rem;
+    padding-inline: 0.5rem;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+}
+
 /*footer slutt*/
 /*Gjelder all tre sider i mobile slutten*/
 
@@ -538,12 +566,14 @@ footer{
        margin: 1rem;
     }
     
-    #ikoner-social-desk{
+    #ikoner-social-desk a{
         font-size: 2rem;
         padding-inline: 0.5rem;
-        display: flex;
         flex-direction: row;
+        color: white;
+        text-decoration: none;
     }
+
      /*footer delen i desktop slutten*/
 
     /*Forside css desktop*/
@@ -603,9 +633,11 @@ footer{
     }
 
     #sa-img img{
-        width: 80%;
-        display: grid;
+        max-width: 350px;
         height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     #sa-img article{
@@ -622,12 +654,12 @@ footer{
     }
 
     #giga-img img{
-        width: 150%;
-        justify-content: left;
+        max-width: 692px;
+        flex-grow: 0.8;
     }
 
     .two-big-img{
-        width: 50%;
+        max-width: 350px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -652,7 +684,7 @@ footer{
         padding-bottom: 2.5rem;
     }
 
-    #about-border span{
+    #about-border div{
         flex-basis: 70%;
         margin: 0 auto;
         display: block;
@@ -676,14 +708,13 @@ footer{
         border: 2px solid black;
     }
 
-     /* #compeling-headline-about{
-      position: relative;
+    #compeling-headline-about{
+        position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 1rem;
         justify-content: space-around;
-        display: inline-block;
     }
     
     #compeling-headline-about p{
@@ -691,9 +722,8 @@ footer{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 40px; 
-        margin-right: 40px;
-        margin-top: 40px;
+        padding: 1rem;
+        justify-content: space-around;
     }
     
     #compeling-headline-about a{
@@ -717,19 +747,17 @@ footer{
         content: "";
         background-image: url(../img/pen-laptop-bok.jpg);
         background-size: cover;
-        position: absolute; 
+        position: absolute;
         opacity: 0.5;
         top: 0px;
         right: 0px;
         bottom: 0px;
         left: 0px;
     }
-
-    #about-trans{
-        background: rgba(249, 245, 252, 0.5);
-        width: fit-content;
-        display: inline-block;
-    }*/
+    
+    #background-color-company{
+        background-color: white;
+    }
 
     #background-clients{
         background-color: #e6bd43;
@@ -775,28 +803,10 @@ footer{
         text-align: center;
     }
 
-   /* #contact-us{
-        display: flex;
-        text-align: center;
-        justify-content: space-around;
-        padding: 1.5rem;
-    }
-
-    #contact-us h3{
-        flex-basis: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #contact-us i{
-        font-size: 1.5rem;
-        float: left;
-    }*/
-/*
     #google-kart{
-        width: "600";
-        height: "450";
-        border: 0;
-    }*/
+        width: 100vw;
+        height: 180px;
+        position: relative;
+    }
     /*About css desktop slutten*/
 }
